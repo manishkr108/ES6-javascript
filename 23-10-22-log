@@ -1,0 +1,83 @@
+VM341:1 Console was cleared
+undefined
+function add(x,y)
+    {
+        return x+y;
+    }
+undefined
+typeof add
+'function'
+add(10,30);
+40
+add("manish",30);
+'manish30'
+add(89,"manish")
+'89manish'
+add(true.true);
+NaN
+add(true,true);
+2
+add(undefined,undefined);
+NaN
+add();
+NaN
+var f=100;
+undefined
+f.toString();
+'100'
+var hh = Number.MAX_SAFE_INTEGER();
+VM1001:1 Uncaught TypeError: Number.MAX_SAFE_INTEGER is not a function
+    at <anonymous>:1:17
+(anonymous) @ VM1001:1
+var hh = Number.MAX_SAFE_INTEGER;
+undefined
+hh;
+9007199254740991
+var aa = 9007199254740991;
+undefined
+aa;
+9007199254740991
+var aa = 90071992547409919876546789;
+undefined
+typeof hh;
+'number'
+aa;
+9.007199254740992e+25
+aa++;
+9.007199254740992e+25
+var v = 9007199254740991n;
+undefined
+typeof v;
+'bigint'
+var h1 = "manish";
+undefined
+h1 / 78;
+NaN
+h1 + "kumar";
+'manishkumar'
+h1 - "kumar";
+NaN
+h1 * 20;
+NaN
+typeof "manish" - 10;
+NaN
+typeof ("manish" - 10);
+'number'
+100/0
+Infinity
+typeof (100/0);
+'number'
+isFinite(100/0);
+false
+"100" + "100";
+'100100'
+"manish"+10;
+'manish10'
+"10"+20;
+'1020'
+parseInt("100"+20);
+10020
+var dd = 888/undefined;
+undefined
+dd;
+NaN
