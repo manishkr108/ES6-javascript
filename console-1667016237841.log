@@ -1,0 +1,138 @@
+var ename;
+undefined
+typeof ename;
+'undefined'
+(undefined == undefined)
+true
+ename ="manish";
+'manish'
+typeof ename;
+'string'
+ename = 101;
+101
+typeof ename;
+'number'
+*) what do u under stand the primitive type(ANS-> primitive type is a considar as a value type because it is contant  the values, it will tech actual value);
+VM712:1 Uncaught SyntaxError: Unexpected token '*'
+/* comment example
+VM902:1 Uncaught SyntaxError: Invalid or unexpected token
+/* comment example*/
+undefined
+enam =  true;
+true
+typeof ename;
+'number'
+ename =  true;
+true
+typeof enam;
+'boolean'
+ename = undefined;
+undefined
+typeof ename;
+'undefined'
+ename = null;
+null
+typeof ename;
+'object'
+/* structure type */
+
+var arr = [10,20,30];
+undefined
+/* baseadress + index*size */
+100+0*4=100
+100+1*4= 104;
+100+2*4 = 108;
+VM1615:2 Uncaught SyntaxError: Invalid left-hand side in assignment
+typeof arr;
+'object'
+ var e = {"ram" : "delhi","shaym":"bangalore"};
+undefined
+e.ram;
+'delhi'
+e.shaym;
+'bangalore'
+var ee = [11,2,33,44,57];
+undefined
+ee[11]=22;
+22
+ee;
+(12) [11, 2, 33, 44, 57, empty × 6, 22]0: 111: 22: 333: 444: 5711: 22length: 12[[Prototype]]: Array(0)
+for(var i =0;I<ee.length;i++){
+    console.log(i);
+}
+VM2094:1 Uncaught ReferenceError: I is not defined
+    at <anonymous>:1:15
+(anonymous) @ VM2094:1
+for(var i =0;i<ee.length;i++){
+    console.log(i);
+}
+VM2123:2 0
+VM2123:2 1
+VM2123:2 2
+VM2123:2 3
+VM2123:2 4
+VM2123:2 5
+VM2123:2 6
+VM2123:2 7
+VM2123:2 8
+VM2123:2 9
+VM2123:2 10
+VM2123:2 11
+undefined
+for(var i =0;i<ee.length;i++){
+    console.log(ee[i]);
+}
+VM2190:2 11
+VM2190:2 2
+VM2190:2 33
+VM2190:2 44
+VM2190:2 57
+VM2190:2 undefined
+VM2190:2 undefined
+VM2190:2 undefined
+VM2190:2 undefined
+VM2190:2 undefined
+VM2190:2 undefined
+VM2190:2 22
+undefined
+function add()
+    {
+        console.log("i am add");
+    }
+undefined
+typeof add;
+'function'
+var x = add;
+undefined
+x;
+ƒ add()
+    {
+        console.log("i am add");
+    }
+x();
+VM2326:3 i am add
+undefined
+function add()
+    {
+        console.log("i am add on upper add");
+    }
+undefined
+x();
+VM2326:3 i am add
+undefined
+var y = 100;
+undefined
+y/ "manish";
+NaN
+10+"manish";
+'10manish'
+y = 100/0;
+Infinity
+'amount is '+(isFinite(y)?y:0;
+VM2714:1 Uncaught SyntaxError: Unexpected token ';'
+'amount is '+(isFinite(y)?y:0);
+'amount is 0'
+y=1700000000000;
+1700000000000
+'amount is '+(isFinite(y)?y:0);
+'amount is 1700000000000'
