@@ -1,0 +1,102 @@
+var x = "hellow";
+undefined
+typeof x;
+'string'
+var y = new String("hellow");
+undefined
+y;
+String {'hellow'}0: "h"1: "e"2: "l"3: "l"4: "o"5: "w"length: 6[[Prototype]]: String[[PrimitiveValue]]: "hellow"
+typeof y
+'object'
+var z = String("hellow");
+undefined
+z;
+'hellow'
+Number;
+ƒ Number() { [native code] }
+String
+ƒ String() { [native code] }
+function show()
+    {
+        console.log("test");
+    }
+undefined
+show();
+VM495:3 test
+undefined
+console.dir(show);
+VM586:1 ƒ show()arguments: nullcaller: nulllength: 0name: "show"prototype: {constructor: ƒ}[[FunctionLocation]]: VM495:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+function show()
+    {
+        console.log("test",arguments);
+    }
+undefined
+typeof console;
+'object'
+typeof console.log
+'function'
+console.log("hellow js",100);
+VM848:1 hellow js 100
+undefined
+console.log("hellow js",+[100]);
+VM880:1 hellow js 100
+undefined
+console.log("hellow js",[100]);
+VM897:1 hellow js [100]0: 100length: 1[[Prototype]]: Array(0)
+undefined
+function show()
+    {
+        console.log("test",arguments);
+        sum=0;
+        for(var i=0;i<arguments.length;i++)
+            {
+                sum+=arguments[i];
+            }
+        return sum;
+    }
+undefined
+show(1,2,3,4,5,6,7,8);
+VM1130:3 test Arguments(8) [1, 2, 3, 4, 5, 6, 7, 8, callee: ƒ, Symbol(Symbol.iterator): ƒ]0: 11: 22: 33: 44: 55: 66: 77: 8callee: ƒ show()length: 8Symbol(Symbol.iterator): ƒ values()[[Prototype]]: Object
+36
+function show()
+    {
+        
+        sum=0;
+        for(var i=0;i<arguments.length;i++)
+            {
+                sum+=arguments[i];
+            }
+        return sum;
+    }
+undefined
+show(1,2,3,4,5,6,7,8);
+36
+function firstfunction()
+    {
+        return 100;
+    }
+undefined
+function secondnumber(){
+    return 200;
+}
+undefined
+show(firstfunction,secondnumber);
+'0function firstfunction()\n    {\n        return 100;\n    }function secondnumber(){\n    return 200;\n}'
+function show()
+    {
+        
+        sum=0;
+        for(var i=0;i<arguments.length;i++)
+            {
+                if(typeof arguments[i]=="function")
+                {
+                    arguments[i]= arguments[i]();
+                }
+                sum+=isNaN(parseInt(arguments[i])) ? 0 : parseInt(arguments[i]);
+            }
+        return sum;
+    }
+undefined
+show(firstfunction,secondnumber,20,30);
+350
