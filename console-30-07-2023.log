@@ -1,0 +1,164 @@
+VM251:1 Console was cleared
+undefined
+function cal(){
+    console.log("this is cal function", arguments);
+}
+undefined
+cal(1,2,3,4,5);
+VM449:2 this is cal function Arguments(5) [1, 2, 3, 4, 5, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+undefined
+var arr = [10,20,30];
+
+undefined
+cal(arr.length);
+VM449:2 this is cal function Arguments [3, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+undefined
+function cal(){
+    var sum = 0;
+    for(var i =0;i<arguments.length;i++){
+        sum+=arguments[i];
+    }
+    return suml
+}
+undefined
+cal(1);
+VM924:6 Uncaught ReferenceError: suml is not defined
+    at cal (<anonymous>:6:5)
+    at <anonymous>:1:1
+cal @ VM924:6
+(anonymous) @ VM951:1
+function cal(){
+    var sum = 0;
+    for(var i =0;i<arguments.length;i++){
+        sum+=arguments[i];
+    }
+    return sum;
+}
+undefined
+cal(1);
+1
+cal(10,20,30);
+60
+console.log(show().dir);
+VM1175:1 Uncaught ReferenceError: show is not defined
+    at <anonymous>:1:9
+(anonymous) @ VM1175:1
+console.log(cal().dir);
+VM1190:1 undefined
+undefined
+console.log(cal.dir);
+VM1198:1 undefined
+undefined
+console.log(cal.dir());
+VM1211:1 Uncaught TypeError: cal.dir is not a function
+    at <anonymous>:1:17
+(anonymous) @ VM1211:1
+console.dir(cal);
+VM1291:1 ƒ cal()arguments: nullcaller: nulllength: 0name: "cal"prototype: {constructor: ƒ}constructor: ƒ cal()[[Prototype]]: Object[[FunctionLocation]]: VM957:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+console.dir(cal.name);
+VM1384:1 cal
+undefined
+var arr [ 10,20,30];
+VM1434:1 Uncaught SyntaxError: Unexpected token '['
+var arr =[ 10,20,30];
+undefined
+typeof arr;
+'object'
+typeof window;
+'object'
+typeof {};
+'object'
+arr instanceof Array;
+true
+typeof Array;
+'function'
+typeof Window;
+'function'
+function cal(){
+    var sum = 0;
+    console.log(typeof arguments);
+    console.log(arguments instanceof Array);
+    for(var i =0;i<arguments.length;i++){
+        sum+=arguments[i];
+    }
+    return sum;
+}
+undefined
+cal(10,20,30);
+VM1882:3 object
+VM1882:4 false
+60
+function firstnum(){
+    return 100;
+}
+undefined
+function secnum(){
+    return 200;
+}
+undefined
+function cal(){
+    var sum = 0;
+    console.log(typeof arguments);
+    console.log(arguments instanceof Array);
+    
+    for(var i =0;i<arguments.length;i++){
+        if(typeof argumrnts[i] == "function")
+        {
+            arguments[i] = arguments[i]();
+        }
+        sum+=IsNaN(parseInt(arguments[i])) ? 0 : parseInt(arguments[i]);
+    }
+    return sum;
+}
+undefined
+cal(firstnum,secnum,10,"20","five",10);
+VM2285:3 object
+VM2285:4 false
+VM2285:7 Uncaught ReferenceError: argumrnts is not defined
+    at cal (<anonymous>:7:9)
+    at <anonymous>:1:1
+cal @ VM2285:7
+(anonymous) @ VM2412:1
+function cal(){
+    var sum = 0;
+    console.log(typeof arguments);
+    console.log(arguments instanceof Array);
+    
+    for(var i =0;i<arguments.length;i++){
+        if(typeof arguments[i] == "function")
+        {
+            arguments[i] = arguments[i]();
+        }
+        sum+=IsNaN(parseInt(arguments[i])) ? 0 : parseInt(arguments[i]);
+    }
+    return sum;
+}
+undefined
+cal(firstnum,secnum,10,"20","five",10);
+VM2417:3 object
+VM2417:4 false
+VM2417:11 Uncaught ReferenceError: IsNaN is not defined
+    at cal (<anonymous>:11:9)
+    at <anonymous>:1:1
+cal @ VM2417:11
+(anonymous) @ VM2422:1
+function cal(){
+    var sum = 0;
+    console.log(typeof arguments);
+    console.log(arguments instanceof Array);
+    
+    for(var i =0;i<arguments.length;i++){
+        if(typeof arguments[i] == "function")
+        {
+            arguments[i] = arguments[i]();
+        }
+        sum+=isNaN(parseInt(arguments[i])) ? 0 : parseInt(arguments[i]);
+    }
+    return sum;
+}
+undefined
+cal(firstnum,secnum,10,"20","five",10);
+VM2430:3 object
+VM2430:4 false
+340
