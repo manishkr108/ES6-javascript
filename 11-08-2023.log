@@ -1,0 +1,156 @@
+var d = [20,30,40,50];
+undefined
+d.forEach(function(element){
+    console.log(element);
+});
+VM235:2 20
+VM235:2 30
+VM235:2 40
+VM235:2 50
+undefined
+function disp(...a){
+
+console.log(a);
+    a.forEach(function(ele){
+        console.log(ele);
+    });
+}
+undefined
+disp(a0,20,30,40,"manis","222","kumar");
+VM523:1 Uncaught ReferenceError: a0 is not defined
+    at <anonymous>:1:6
+(anonymous) @ VM523:1
+disp(20,30,40,"manis","222","kumar");
+VM420:3 (6) [20, 30, 40, 'manis', '222', 'kumar']
+VM420:5 20
+VM420:5 30
+VM420:5 40
+VM420:5 manis
+VM420:5 222
+VM420:5 kumar
+undefined
+function disp(...a){
+    console.log(a);
+    Array.prototype.forEach.c
+}
+undefined
+function disp(...a){
+    console.log(a);
+    Array.prototype.forEach.call(arguments,function(ele){
+    console.log(ele);
+    });
+}
+undefined
+disp(20,30,40,"manis","222","kumar");
+VM870:2 (6) [20, 30, 40, 'manis', '222', 'kumar']
+VM870:4 20
+VM870:4 30
+VM870:4 40
+VM870:4 manis
+VM870:4 222
+VM870:4 kumar
+undefined
+var dd = [10,20,30];
+undefined
+var ee = [40,50,60];
+undefined
+var k = [];
+
+for(var i in dd){
+    k.push(i);
+}
+
+for(var j in ee){
+    k.push(j);
+}
+6
+k;
+(6) ['0', '1', '2', '0', '1', '2']0: "0"1: "1"2: "2"3: "0"4: "1"5: "2"length: 6[[Prototype]]: Array(0)
+var k = [];
+
+for(var i of dd){
+    k.push(i);
+}
+
+for(var j of ee){
+    k.push(j);
+}
+6
+k;
+(6) [10, 20, 30, 40, 50, 60]
+var f1 = [...dd,...ee];
+undefined
+f1;
+(6) [10, 20, 30, 40, 50, 60]
+// it is spred operation easy way to merge two array
+undefined
+var f1 = [...dd,...ee,...[22,33,44];
+VM1620:1 Uncaught SyntaxError: Unexpected token ';'
+var f1 = [...dd,...ee,...[22,33,44]];
+undefined
+f1;
+(9) [10, 20, 30, 40, 50, 60, 22, 33, 44]
+function cal(x,y){
+    return x+y;
+}
+undefined
+cal(10,20);
+30
+cal(10);
+NaN
+cal();
+NaN
+// it is issue becaue you must be pass both value , so alternate is see below
+undefined
+function cal(x=0,y=0){
+    return x+y;
+}
+undefined
+cal(10);
+10
+// in this case NaN not given because of default arguments ES6 2015 feature default arguments
+undefined
+var mynam= undefined;
+undefined
+mynam;
+undefined
+if(typeof mynam=="undefined" || mynam==null || mynam.length==0){
+    console.log("name is no there");
+}
+VM2550:2 name is no there
+undefined
+name=null;
+
+null
+if(typeof mynam=="undefined" || mynam==null || mynam.length==0){
+    console.log("name is no there");
+}
+VM2579:2 name is no there
+undefined
+// suppose or more condition is there so you can write more condition like || 
+// dont write so much code JS provide one rule truethy and falsy example below
+undefined
+if(name){
+    console.log("truthy name is there");
+}else{
+    console.log("falsy name is not there");
+}
+VM3211:2 truthy name is there
+undefined
+// just one line code it will work
+undefined
+// false is  -> 0,"",undefined, false,null these all are false part
+undefined
+function cal(x,y) {
+
+    x= x || 0;
+    y= y || 0;
+
+    return x+y;
+    
+}
+undefined
+cal(10);
+10
+/before truthy false developer doing this thing mens if value is there in x || no need to check this side value
+VM3798:1 Uncaught SyntaxError: Invalid regular expression: missing /
