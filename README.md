@@ -8,7 +8,7 @@
 
 - 🔭 I’m currently working on **Go Lang, JavaScript, Reactjs, PHP, LARAVEL, REST API, MySQL**.
 
-- 👨‍💻 All of my projects are available at [https://harshit-portfolio99.web.app/](https://manishkr108/)
+- 👨‍💻 All of my projects are available at [https://github.com/manishkr108])
 
 - 💬 Ask me about **Frontend Development, DSA**.
 
